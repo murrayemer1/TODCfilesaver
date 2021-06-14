@@ -8,12 +8,15 @@ There are also some functions to choose what file names appear in runway (the co
 2. You can remove any airfeilds not listed in in Airfeilds6.txt from runway using airfeildsUpdae() or clicking 'remove all airfeilds execpt those in Airfeilds6'
 4. runways6.txt can be updated with all runways intersections in the latest TODC AODB using runways6Update
 
-Limitations:
-This program DOES NOT look for the 'save' pop up, or change the folder where files get saved. It will only save if pop up is in correct location (top RHC of pop up is in top RHC of screen) and there is a non white background under the pop up
+
+### Limitations:
+This program __DOES NOT__ look for the 'save' pop up, or change the folder where files get saved. It will only save if pop up is in correct location (top RHC of pop up is in top RHC of screen) and there is a non white background under the pop up
 This program does ajust for screen size
 
-How to use this program:
-Step 1) Make contents of runway variable equal to list of calculations to be run in TODC. There are two ways to do this.
+
+### How to use this program:
+  Step 1) Make contents of runway variable equal to list of calculations to be run in TODC. There are two ways to do this.
+        
         a) Manually:
            1) Type desired filenames into Runways6.txt in the same order calculations will be run.
            2) Save Runways6.txt
@@ -25,13 +28,13 @@ Step 1) Make contents of runway variable equal to list of calculations to be run
                       ii)   Save Airfeilds6.txt
                       iii)  Run AirfeildsUpdate() and any airfeilds not in Airfeilds6.txt will be removed from list of filenames
 
-Step 2) Start TODC and wait for first calc to finish.
-Step 3) In 'save' pop up, go to correct folder for saving files.
-Step 4) Move 'save' pop up to top RHC of screen.
-Step 5) Ensure non white background under save pop up
-Step 6) Run startCalc() to activtae clicker
+  Step 2) Start TODC and wait for first calc to finish.  
+  Step 3) In 'save' pop up, go to correct folder for saving files.  
+  Step 4) Move 'save' pop up to top RHC of screen.  
+  Step 5) Ensure non white background under save pop up  
+  Step 6) Run startCalc() to activtae clicker    
 
-files required in folder:
-autoSaver.py
-runways6.txt #list of filenames (required)
-Airfeilds6.txt #list of airfeilds to exclude (optional)
+  files required in folder:  
+  * autoSaver.py
+  * runways6.txt (list of filenames -required)
+  * Airfeilds6.txt (list of airfeilds to include -optional)
